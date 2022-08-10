@@ -5,3 +5,4 @@ if (isNaN(number)) {
     console.error("Ошибка");
 }
 console.warn("Предупреждение");
+let neww;
