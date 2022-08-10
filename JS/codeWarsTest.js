@@ -5,15 +5,12 @@ function alphabetPosition(text) {
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
   for (let i = 0; i < text.length; i++) {
     for (let k = 0; k <= alphabet.length; k++) {
-      if (i == text.length - 2 && alphabet[k] == text[i]) {
-        res += (k + 1);
-        break;
-      } else if (alphabet[k] == text[i]) {
+      if (alphabet[k] == text[i]) {
         res += (k + 1) + " ";
       }
     }
   }
-  return text = "\"" + res + "\"";
+  return res.trim();
 }
 
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));
