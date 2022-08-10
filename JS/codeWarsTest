@@ -1,0 +1,13 @@
+function alphabetPosition(text) {
+  let res;
+  let alphabet = "abcdefjhijklmnopqrstuvwxyz";
+  for (let i = 0; i < alphabet.length; i++) {
+    for (let k = 0; k < text.length; k++) {
+      if (alphabet[i] == text[k]) {
+        res += (i+1) + " ";
+      }
+        
+    }
+  }
+  return res;
+}
